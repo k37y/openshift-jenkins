@@ -1,7 +1,7 @@
 ##############################################
 # Stage 1 : Build go-init
 ##############################################
-FROM registry.access.redhat.com/ubi9/go-toolset:1.21 AS go-init-builder
+FROM registry.access.redhat.com/ubi9/go-toolset:9.5-1744294473 AS go-init-builder
 ARG jenkins_version=latest
 WORKDIR  /go/src/github.com/openshift/jenkins
 COPY . .
