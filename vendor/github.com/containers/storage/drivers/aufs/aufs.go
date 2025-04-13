@@ -1,5 +1,4 @@
 //go:build linux
-// +build linux
 
 /*
 
@@ -776,4 +775,9 @@ func (a *Driver) UpdateLayerIDMap(id string, toContainer, toHost *idtools.IDMapp
 // SupportsShifting tells whether the driver support shifting of the UIDs/GIDs in an userNS
 func (a *Driver) SupportsShifting() bool {
 	return false
+}
+
+// Dedup performs deduplication of the driver's storage.
+func (d *Driver) Dedup(req graphdriver.DedupArgs) (graphdriver.DedupResult, error) {
+	return graphdriver.DedupResult{}, nil
 }
