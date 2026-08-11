@@ -10,7 +10,8 @@ def toolsToAdd = [
     "oc-4.17": "/usr/share/openshift/bin/oc-417",
     "oc-4.18": "/usr/share/openshift/bin/oc-418",
     "oc-4.19": "/usr/share/openshift/bin/oc-419",
-    "oc-4.20": "/usr/share/openshift/bin/oc-420"
+    "oc-4.20": "/usr/share/openshift/bin/oc-420",
+    "oc-4.21": "/usr/share/openshift/bin/oc-421"
 ]
 
 def existing = descriptor.getInstallations() as List
